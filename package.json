@@ -1,0 +1,30 @@
+{
+  "name": "voice_interactive_soundboard",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "http://www.jodhman.se/jukebox",
+  "dependencies": {
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "react-scripts": "^2.1.8",
+    "speech-to-text": "^0.7.4",
+    "uuid": "^3.3.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "flow-bin": "^0.80.0"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

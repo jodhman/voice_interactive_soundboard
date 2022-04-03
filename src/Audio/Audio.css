@@ -1,0 +1,17 @@
+button.sound {
+    padding: 15px 20px;
+    background-color: #e6ce4a;
+    border: none;
+    border-radius: 6px;
+    color: #0c0c0c;
+    font-size: 32px;
+    font-family: 'Gamja Flower';
+    cursor: pointer;
+    transition: all 0.4s;
+    margin: 10px 5px;
+}
+
+button.sound:hover {
+    background-color: rgba(230, 206, 74, 0.6);
+    transform: scale(0.95)
+}

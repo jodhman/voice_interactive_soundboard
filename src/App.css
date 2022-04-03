@@ -1,0 +1,151 @@
+.app {
+    width: 100%;
+    background-color: #0c0c0c;
+    padding-top: 50px;
+}
+
+.hr {
+    width: 100%;
+    height: 1px;
+    margin: 30px 0;
+    background-color: #e6ce4a;
+}
+
+.settings-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.app h3 {
+    color: #e6ce4a;
+    text-align: center;
+    margin-top: 2px;
+}
+
+.settings-wrapper div > p {
+    color: #e6ce4a;
+}
+
+.settings-wrapper div .setting {
+    height: 15px;
+    width: 15px;
+    border-radius: 5px;
+    border: 1.5px solid #e6ce4a;
+    background-color: transparent;
+    margin: 0 auto;
+}
+
+.settings-wrapper div .setting-active {
+    background-color: rgba(134, 230, 74, 0.6);
+}
+
+.header-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #e6ce4a;
+    font-size: 48px;
+    font-family: 'Montserrat';
+    font-weight: 200;
+}
+
+.recording-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sound-wrapper {
+    padding-bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.recording-info {
+    color: #e6ce4a;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 200;
+}
+
+.recording-info span {
+    color: rgba(134, 230, 74, 1);
+}
+
+.listening-button {
+    padding: 15px 20px;
+    background-color: rgba(134, 230, 74, 1);
+    border: none;
+    border-radius: 6px;
+    color: #0c0c0c;
+    font-size: 26px;
+    font-family: Montserrat;
+    font-weight: 200;
+    cursor: pointer;
+    transition: all 0.4s;
+    text-transform: uppercase
+}
+
+.listening-button-listening {
+    background-color: #e6ce4a;
+}
+
+.listening-button:hover {
+    background-color: rgba(134, 230, 74, 0.6);
+    transform: scale(0.95)
+}
+
+.listening-button-listening:hover {
+    background-color: rgba(230, 206, 74, 0.6);
+    transform: scale(0.95)
+}
+
+.rec-icon {
+    width: 32px;
+    height: 32px;
+    background: url(./assets/icons/rec.svg);
+    background-size: 32px 32px;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.rec-icon-active {
+    margin-left: 30px;
+    animation-name: blinkingIcon;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.message-text, .message-text-lg {
+    text-align: center;
+    color: #e6ce4a;
+    font-family: Montserrat;
+    font-weight: 200;
+    transition: all 0.4s;
+}
+
+.message-text-lg {
+    font-size: 20px;
+}
+
+.message-text span {
+    color: rgba(134, 230, 74, 1);
+}
+
+.message-text-fade {
+    color: #0c0c0c;
+    cursor: default;
+    user-select: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+@keyframes blinkingIcon {
+    0% { opacity: 0 }
+    50% { opacity: 1 }
+    100% { opacity: 0 }
+}
